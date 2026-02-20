@@ -22,7 +22,7 @@ export async function GET(request: NextRequest) {
     };
 
     const schemaScript = `\n<script type="application/ld+json">${JSON.stringify(schema)}</script>\n`;
-    html = html.replace('</head>', `${schemaScript}</head>`);
+    html = html.replace(/<\/head>/i, `${schemaScript}</head>`);
 
     // 2. Inject Direct-Answer FAQ for Bots at the top of <body>
     const directAnswer = `
@@ -35,11 +35,11 @@ export async function GET(request: NextRequest) {
         </ul>
       </div>
     `;
-    html = html.replace('<body>', `<body>${directAnswer}`);
+    html = html.replace(/<body[^>]*>/i, (match) => `${match}${directAnswer}`);
 
     // 3. Inject llms.txt link
     const llmsLink = `<link rel="alternate" type="text/plain" href="/llms.txt">`;
-    html = html.replace('</head>', `${llmsLink}</head>`);
+    html = html.replace(/<\/head>/i, `${llmsLink}</head>`);
 
     return new Response(html, {
       headers: {
