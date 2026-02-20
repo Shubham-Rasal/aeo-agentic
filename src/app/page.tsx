@@ -20,9 +20,9 @@ export default function LandingPage() {
           <button className="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 transition-colors rounded-lg font-semibold text-lg flex items-center gap-2 group">
             Launch Proxy Layer <ArrowRight className="group-hover:translate-x-1 transition-transform" />
           </button>
-          <button className="px-8 py-4 bg-slate-900 border border-slate-800 hover:bg-slate-800 transition-colors rounded-lg font-semibold text-lg">
+          <a href="/simulate" className="px-8 py-4 bg-slate-900 border border-slate-800 hover:bg-slate-800 transition-colors rounded-lg font-semibold text-lg">
             See Bot Simulation
-          </button>
+          </a>
         </div>
       </header>
 
