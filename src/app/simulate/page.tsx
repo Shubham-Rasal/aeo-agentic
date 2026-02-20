@@ -22,13 +22,12 @@ export default function SimulatePage() {
             <Zap className="text-indigo-500 fill-indigo-500" size={24} />
             <span>AEO-Agentic</span>
           </a>
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
-            <a href="/" className="hover:text-white transition-colors">Platform</a>
-            <a href="/simulate" className="text-white">Simulator</a>
+          <div className="flex items-center gap-4">
+            <a href="/simulate" className="text-sm font-medium text-white transition-colors mr-4">Simulator</a>
+            <button className="px-4 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-slate-200 transition-colors">
+              Get Started
+            </button>
           </div>
-          <button className="px-4 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-slate-200 transition-colors">
-            Get a Demo
-          </button>
         </div>
       </nav>
 
@@ -38,9 +37,9 @@ export default function SimulatePage() {
             <Terminal size={12} className="text-indigo-400" />
             AI Bot Simulation Environment
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">See what the bots see.</h1>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">See what the bots see.</h1>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Standard websites are designed for eyes. AEO-Agentic optimizes them for models. Compare your human UI vs the bot-ready proxy layer.
+            Standard websites are designed for humans. AEO-Agentic optimizes them for models in real-time.
           </p>
         </header>
 
@@ -161,12 +160,19 @@ export default function SimulatePage() {
       </div>
 
       {/* Footer */}
-      <footer className="py-20 border-t border-white/5 bg-black text-center">
-        <div className="max-w-7xl mx-auto px-6">
-          <p className="text-slate-600 text-sm font-bold uppercase tracking-[0.2em] mb-4">Build for the future</p>
-          <a href="/" className="text-indigo-400 font-bold hover:text-indigo-300 transition-colors flex items-center justify-center gap-2">
-            Explore the Platform <ArrowRight size={16} />
-          </a>
+      <footer className="py-20 border-t border-white/5 bg-black">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex items-center gap-2 font-bold text-xl tracking-tighter">
+            <Zap className="text-indigo-500 fill-indigo-500" size={24} />
+            <span>AEO-Agentic</span>
+          </div>
+          <div className="flex gap-8 text-slate-500 text-sm font-medium">
+            <a href="/simulate" className="hover:text-white transition-colors">Simulator</a>
+            <a href="https://github.com/Shubham-Rasal/aeo-agentic" target="_blank" className="hover:text-white transition-colors">GitHub</a>
+          </div>
+          <div className="text-xs text-slate-700 font-bold uppercase tracking-widest">
+            © 2026 AEO-Agentic
+          </div>
         </div>
       </footer>
     </div>
