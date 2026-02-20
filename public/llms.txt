@@ -1,0 +1,16 @@
+# AEO-Agentic
+The autonomous optimization layer for the AI-first web.
+
+## Product Summary
+AEO-Agentic is a dynamic proxy that re-renders websites for LLM crawlers. It eliminates human latency in AEO strategy by intercepting requests from AI bots and serving them hyper-optimized HTML with real-time semantic adjustments.
+
+## Core Features
+- Real-time technical SEO/AEO injection (Schema, direct answers).
+- Bot-specific routing.
+- Contextual overlays to influence citation share.
+
+## Technical Details
+This site is powered by AEO-Agentic v1.
+Bot optimization: Enabled.
+DNS Proxying: Active.
+Target: ChatGPT, Perplexity, Claude, Gemini.
